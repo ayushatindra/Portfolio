@@ -1,0 +1,174 @@
+/* Basic CSS for Portfolio */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern font choice */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f7f7f7; /* Light background color */
+  color: #333; /* Text color */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #2c3e50; /* Dark background color */
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .logo {
+  color: #ecf0f1; /* Light text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-menu a {
+  color: #ecf0f1; /* Light text color */
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .nav-menu a:hover {
+  background-color: #34495e; /* Hover background color */
+  color: #1abc9c; /* Hover text color */
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  margin-top: 60px; /* To create space for fixed nav */
+}
+
+.home-container, .about-container, .skills-container, .projects-container, .contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+  color: #34495e; /* Darker text color */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+/* Skills Section */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.skills-list li {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #ecf0f1; /* Light background */
+  text-align: center;
+  font-weight: 600; /* Bold text */
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #bdc3c7; /* Hover background color */
+}
+
+/* Projects Section */
+.projects-container .project {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.projects-container .project h3 {
+  color: #3498db; /* Blue title color */
+}
+
+.projects-container .project p {
+  margin: 10px 0;
+}
+
+.projects-container .project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); /* Small upward movement on hover */
+}
+
+/* Contact Section */
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-container form input, .contact-container form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-container form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1abc9c; /* Primary button color */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container form button:hover {
+  background-color: #16a085; /* Darker green hover color */
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50; /* Dark background color */
+  color: #ecf0f1; /* Light text color */
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  nav .nav-menu a {
+      padding: 8px 20px;
+  }
+}
